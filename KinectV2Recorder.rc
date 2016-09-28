@@ -1,0 +1,130 @@
+// KinectV2Recorder.rc
+//
+// Author: Po-Chen Wu (pcwu0329@gmail.com)
+//
+// These codes are written mainly based on codes from Kinect for Windows SDK 2.0
+// https://www.microsoft.com/en-us/download/details.aspx?id=44561
+
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_APP                 ICON                    "icon/app.ico"
+IDI_RECORD              ICON                    "icon/record.ico"
+IDI_STOP                ICON                    "icon/stop.ico"
+IDI_SHOT                ICON                    "icon/shot.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+IDD_APP DIALOGEX 58, 90, 1152, 432
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT | WS_EX_APPWINDOW
+CAPTION "Kinect V2 Recorder"
+CLASS "KinectV2RecorderAppDlgWndClass"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_COLORVIEW, "Static", SS_BLACKFRAME, 0, 0, 768, 432
+    CONTROL         "",IDC_DEPTHVIEW, "Static", SS_BLACKFRAME, 768, 0, 384, 318
+    CONTROL         "",IDC_INFRAREDVIEW, "Static", SS_BLACKFRAME, 768, 318, 122, 101
+    GROUPBOX        "", IDC_2D3D_GROUPBOX, 935, 319, 82, 19, 0, WS_EX_TRANSPARENT, WS_TABSTOP
+    CONTROL         "2D", IDC_2D, "Button", BS_AUTORADIOBUTTON | WS_GROUP, 947, 323, 28, 13
+    CONTROL         "3D", IDC_3D, "Button", BS_AUTORADIOBUTTON, 985, 323, 28, 13
+    LTEXT           "Model:",IDC_MODEL_TEXT,893,345,25,13,ES_RIGHT 
+    LTEXT           "Type:",IDC_TYPE_TEXT,893,365,25,13,ES_RIGHT 
+    LTEXT           "Level:",IDC_LEVEL_TEXT,893,385,25,13,ES_RIGHT 
+    LTEXT           "Side:",IDC_SIDE_TEXT,893,405,25,13,ES_RIGHT 
+    COMBOBOX        IDC_MODEL_CBO, 923, 343, 106, 180, WS_TABSTOP | WS_VSCROLL | CBS_DROPDOWNLIST
+    COMBOBOX        IDC_TYPE_CBO, 923, 363, 106, 180, WS_TABSTOP | WS_VSCROLL | CBS_DROPDOWNLIST
+    COMBOBOX        IDC_LEVEL_CBO, 923, 383, 106, 180, WS_TABSTOP | WS_VSCROLL | CBS_DROPDOWNLIST
+    COMBOBOX        IDC_SIDE_CBO, 923, 403, 106, 180, WS_TABSTOP | WS_VSCROLL | CBS_DROPDOWNLIST
+    DEFPUSHBUTTON   "", IDC_BUTTON_RECORD, 1041, 319, 110, 101, WS_TABSTOP | BS_ICON
+    DEFPUSHBUTTON   "", IDC_BUTTON_SHOT, 895, 323, 24, 16, WS_TABSTOP | BS_ICON
+    LTEXT           "",IDC_STATUS,769,420,382,11,SS_SUNKEN,0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_APP, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 505
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

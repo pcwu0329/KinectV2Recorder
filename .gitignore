@@ -1,0 +1,19 @@
+# User data
+
+# Temporary files
+
+# Data
+2D
+3D
+
+# Compiled files
+*.sdf
+*.opensdf
+*.suo
+
+# Bbinary directories
+Debug
+Release
+
+# Reference
+reference
