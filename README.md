@@ -1,7 +1,7 @@
 # KinectV2Recorder
 **Authors:** [Po-Chen Wu](http://media.ee.ntu.edu.tw/personal/pcwu/)
 
-KinectV2Recorder is a Win32 program used to record the **Color**, **Depth**, and **Infrared** sequences captured from Kinect V2. These three different sequences are somehow synchronized in hardware (30 fps). The depth and infrared frames are captured in the exact same time, followed by the color frame (~ 6 ms later).
+KinectV2Recorder is a Win32 program used for recording the **Color**, **Depth**, and **Infrared** sequences captured from Kinect V2. These three different sequences are somehow synchronized in hardware (30 fps). The depth and infrared frames are captured in the exact same time, followed by the color frame (~ 6 ms later).
 
 ![alt tag](https://raw.githubusercontent.com/Po-Chen/KinectV2Recorder/master/image/KinectV2Recorder.png)
 
