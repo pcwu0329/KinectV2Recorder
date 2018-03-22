@@ -3,7 +3,7 @@
 
 KinectV2Recorder is a Win32 program used for recording the **Color**, **Depth**, and **Infrared** sequences captured from Kinect V2. These three different sequences are somehow synchronized in hardware (30 fps). The depth and infrared frames are captured in the exact same time, followed by the color frame (~ 6 ms later).
 
-![alt tag](https://github.com/pcwu0329/KinectV2Recorder/blob/master/image/KinectV2Recorder.png)
+![alt tag](https://raw.githubusercontent.com/pcwu0329/KinectV2Recorder/master/image/KinectV2Recorder.png)
 
 ### System Requirements for Using Kinect V2 Recorder
 
@@ -34,9 +34,9 @@ The system requirements for Kinect V2 according to [MSDN](https://msdn.microsoft
 ### Program Description
 Kinect V2 Recorder is used for recording image sequences at 30 fps (or just take pictures) with Kinect V2. Color images are stored in **PPM** (or **BMP** by *#define COLOR_BMP*) format (24 bits per pixel). Depth and infrared images are stored in **PGM** format (16 bits per pixel). D2D is used to achieve real-time display. Intel IPP is further used in regards to optimization. To enable using IPP, please following the project setup shown below.
 
-![alt tag](https://github.com/pcwu0329/KinectV2Recorder/blob/master/image/UseIntelIPP.png)
+![alt tag](https://raw.githubusercontent.com/pcwu0329/KinectV2Recorder/master/image/UseIntelIPP.png)
 
-![alt tag](https://github.com/pcwu0329/KinectV2Recorder/blob/master/image/Preprocessor.png)
+![alt tag](https://raw.githubusercontent.com/pcwu0329/KinectV2Recorder/master/image/Preprocessor.png)
 
 ### Proper Display
 To facilitate better display of KinectV2Recorder, please go to your Desktop and right-click your mouse. Then go to Display Settings → Display → Change the size of text, apps, and other items: **100%**
