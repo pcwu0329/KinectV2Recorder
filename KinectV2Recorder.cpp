@@ -878,7 +878,7 @@ void CKinectV2Recorder::ProcessInfrared(INT64 nTime, const UINT16* pBuffer, int 
             {
                 ResetRecordParameters();
                 MessageBox(NULL,
-                    L"Infrared frame dropping occured...\n",
+                    L"Infrared frame dropping occurred...\n",
                     L"No Good",
                     MB_OK | MB_ICONERROR
                     );
@@ -1007,7 +1007,7 @@ void CKinectV2Recorder::ProcessDepth(INT64 nTime, const UINT16* pBuffer, int nWi
             {
                 ResetRecordParameters();
                 MessageBox(NULL,
-                    L"Depth frame dropping occured...\n",
+                    L"Depth frame dropping occurred...\n",
                     L"No Good",
                     MB_OK | MB_ICONERROR
                     );
@@ -1121,7 +1121,7 @@ void CKinectV2Recorder::ProcessColor(INT64 nTime, RGBQUAD* pBuffer, int nWidth, 
             {
                 ResetRecordParameters();
                 MessageBox(NULL,
-                    L"Color frame dropping occured...\n",
+                    L"Color frame dropping occurred...\n",
                     L"No Good",
                     MB_OK | MB_ICONERROR
                     );
@@ -1578,7 +1578,7 @@ void CKinectV2Recorder::CheckImages()
     if (!(nInfraredFrameNumber == nDepthFrameNumber && nDepthFrameNumber == nColorFrameNumber))
     {
         MessageBox(NULL,
-            L"Frame dropping occured...\n",
+            L"Frame dropping occurred...\n",
             L"No Good",
             MB_OK | MB_ICONERROR
             );
@@ -1590,7 +1590,7 @@ void CKinectV2Recorder::CheckImages()
         if (m_vInfraredList[i] != m_vDepthList[i] || abs(m_vColorList[i] - m_vInfraredList[i]) > 100000)
         {
             MessageBox(NULL,
-                L"Frame dropping occured...\n",
+                L"Frame dropping occurred...\n",
                 L"No Good",
                 MB_OK | MB_ICONERROR
                 );
